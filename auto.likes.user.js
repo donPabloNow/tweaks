@@ -3,10 +3,10 @@
 // @description  don[Pablo]: Auto like Instagram Posts
 // @note    don[Pablo]: Instagram Auto Like
 // ### FILES
-// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/ig.auto.likes.user.js
-// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/ig.auto.likes/icon.svg
-// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/ig.auto.likes/scripts.js
-// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/ig.auto.likes/styles.css
+// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.likes.user.js
+// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.likes/icon.svg
+// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.likes/scripts.js
+// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.likes/styles.css
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
