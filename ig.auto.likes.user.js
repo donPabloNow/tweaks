@@ -32,6 +32,7 @@
 // @supportURL  https://donPabloNow.com
 // @homepageURL  https://donPabloNow.com
 // @feedback-url  https://donPabloNow.com/contact
+// ==/UserScript==
 (function () {
   "use strict";
   setInterval(function () {
