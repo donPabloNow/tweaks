@@ -1,83 +1,16 @@
 // ==UserScript==
-// @name    don[Pablo]: Direct Links
-// @description  don[Pablo]: Direct Links
-// @note    don[Pablo]: Direct Links
+// @name    don[Pablo]: Dark Mode
+// @description  don[Pablo]: Dark Mode
+// @note    don[Pablo]: Dark Mode
 // ### FILES
-// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/tweak.user.js
-// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/icon.svg
-// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/scripts.js
-// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/styles.css
+// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/tweak.user.js
+// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/icon.svg
+// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/scripts.js
+// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/styles.css
 // ### GRANTS
 // @grant       none
-// ### INCLUDES
-// @include     *://google.*
-// @include     *://www.google.*
-// @include     *://encrypted.google.*
 // ### MATCH
-// @match       *://yandex.ru/*
-// @match       *://yandex.ua/*
-// @match       *://yandex.by/*
-// @match       *://yandex.kz/*
-// @match       *://yandex.com.tr/*
-// @match       *://yandex.com/*
-// @match       *://*.yandex.ru/*
-// @match       *://*.yandex.ua/*
-// @match       *://*.yandex.by/*
-// @match       *://*.yandex.kz/*
-// @match       *://*.yandex.com.tr/*
-// @match       *://*.yandex.com/*
-// @match       *://youtube.com/*
-// @match       *://*.youtube.com/*
-// @match       *://wikimapia.org/*
-// @match       *://deviantart.com/*
-// @match       *://*.deviantart.com/*
-// @match       *://joyreactor.cc/*
-// @match       *://*.joyreactor.cc/*
-// @match       *://reactor.cc/*
-// @match       *://*.reactor.cc/*
-// @match       *://joyreactor.com/*
-// @match       *://*.joyreactor.com/*
-// @match       *://vk.com/*
-// @match       *://*.vk.com/*
-// @match       *://ok.ru/*
-// @match       *://*.ok.ru/*
-// @match       *://steamcommunity.com/*
-// @match       *://*.steamcommunity.com/*
-// @match       *://facebook.com/*
-// @match       *://*.facebook.com/*
-// @match       *://twitter.com/*
-// @match       *://*.twitter.com/*
-// @match       *://4pda.ru/*
-// @match       *://*.4pda.ru/*
-// @match       *://kat.cr/*
-// @match       *://kickassto.co/*
-// @match       *://katproxy.is/*
-// @match       *://thekat.tv/*
-// @match       *://*.kat.cr/*
-// @match       *://*.kickassto.co/*
-// @match       *://*.katproxy.is/*
-// @match       *://*.thekat.tv/*
-// @match       *://addons.mozilla.org/*
-// @match       *://pixiv.net/*
-// @match       *://*.pixiv.net/*
-// @match       *://tumblr.com/*
-// @match       *://*.tumblr.com/*
-// @match       *://danieldefo.ru/*
-// @match       *://*.danieldefo.ru/*
-// @match       *://yaplakal.com/*
-// @match       *://*.yaplakal.com/*
-// @match       *://soundcloud.com/*
-// @match       *://*.soundcloud.com/*
-// @match       *://upwork.com/*
-// @match       *://*.upwork.com/*
-// @match       *://picarto.tv/*
-// @match       *://*.picarto.tv/*
-// @match       *://taker.im/*
-// @match       *://*.taker.im/*
-// @match       *://*.forumavia.ru/*
-// @match       *://*.slack.com/*
-// @match       *://instagram.com/*
-// @match       *://*.instagram.com/*
+// @match       *://*
 // ### DON PABLO
 // @version    1.0.0
 // @author    don[Pablo]
