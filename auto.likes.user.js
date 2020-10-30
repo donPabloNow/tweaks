@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name    don[Pablo]: Instagram Auto Like
+// @name    don[Pablo]: Auto like Instagram Posts
 // @description  don[Pablo]: Auto like Instagram Posts
-// @note    don[Pablo]: Instagram Auto Like
+// @note    don[Pablo]: Auto like Instagram Posts
 // ### FILES
 // @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.likes.user.js
 // @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.likes/icon.svg
