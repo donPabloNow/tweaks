@@ -22,7 +22,7 @@
 // ### INCLUDES
 // @include    *://*.dogedoge.com/*
 // ### DON PABLO
-// @version    24.12
+// @version    1.0.0
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
