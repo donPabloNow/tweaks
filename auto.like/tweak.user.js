@@ -4,7 +4,7 @@
 // @note    don[Pablo]: Auto like Instagram Posts
 // ### FILES
 // @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.like/tweak.user.js
-// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/31ee08c1eeb32c221177a2821c04eebe04edf55c/auto.like/icon.svg
+// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.like/icon.svg
 // @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.like/scripts.js
 // @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.like/styles.css
 // ### GRANTS
