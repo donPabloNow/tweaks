@@ -25,7 +25,7 @@
 // @version    1.0.0
 // @author    don[Pablo]
 // @create     2018-11-25
-// @license    MIT-3.0-only
+// @license    MIT-3.0-only\
 // @namespace  don@OBEYi.com
 // @copyright  2018-2020, MIT
 // @home-url   https://OBEYi.com
