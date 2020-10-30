@@ -3,10 +3,10 @@
 // @description  don[Pablo]: Auto like Instagram Posts
 // @note    don[Pablo]: Direct Links
 // ### FILES
-// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.links.user.js
-// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.links/icon.svg
-// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.links/scripts.js
-// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.links/styles.css
+// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/tweak.user.js
+// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/icon.svg
+// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/scripts.js
+// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/direct.link/styles.css
 // ### GRANTS
 // @grant       none
 // ### INCLUDES
