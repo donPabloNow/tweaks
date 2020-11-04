@@ -74,6 +74,6 @@ go.OPTIONS.forEach((option) => {
 });
 
 //go
-go.loadMultipleExternalResources(true).then(function () {
+go.loadMultipleExternalResources(go._libs, true).then(function () {
   // shake-a-leg
 });
