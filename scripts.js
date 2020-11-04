@@ -4,6 +4,8 @@ let base = {
   loadExternalResource: function (url, perm) {
     if (!url) return;
 
+      var type;
+
     return new Promise(function (resolve, reject) {
       var match = url.match(/\.([^.]+)$/);
       if (match) type = match[1];
