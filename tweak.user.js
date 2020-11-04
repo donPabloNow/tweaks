@@ -26,7 +26,7 @@
 // ### INCLUDES
 // @include    *
 // ### DON PABLO
-// @version    1.0.1
+// @version    1.0.0
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
@@ -38,28 +38,3 @@
 // @feedback-url  https://donPabloNow.com/contact
 // ==/UserScript==
 GM_addStyle(GM_getResourceText("Style"));
-
-const INTER = 100;
-
-const Types = [
-  {
-  Pattern: document.URL.includes("gram.com/p/"),
-  Condition: `svg[aria-label="Unlike"]`,
-  Action: `.fr66n button.wpO6b`,
-  }
-]
-
-function action(condition, action) {
-  !document.querySelector(condition)
-    ? document.querySelector(action).click()
-    : setInterval(function () {
-        close();
-      }, INTER);
-}
-
-Types.forEach(type => {
-  if (URL.includes(type.Pattern))
-  setInterval(function () {
-    action(type.Condition, type.Action);
-  }, INTER);  
-});
