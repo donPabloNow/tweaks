@@ -1,4 +1,4 @@
-let one = {
+let base = {
   Types: {
     Script: "/script.js",
     Style: "/style.css",
@@ -49,7 +49,7 @@ let go = {
   _libs: [],
   loadMultipleExternalResources: function (itemsToLoad, perm) {
     var promises = itemsToLoad.map(function (url) {
-      if (url) return one.loadExternalResource(url, perm);
+      if (url) return base.loadExternalResource(url, perm);
     });
     return Promise.all(promises);
   },
@@ -59,12 +59,12 @@ let go = {
   OPTIONS: [
     {
       PATH: "auto.like",
-      TYPE: one.Types.Script,
+      TYPE: base.Types.Script,
       CON: `https://www.instagram.com/p/`,
     },
     {
       PATH: "dark.theme",
-      TYPE: one.Types.Style,
+      TYPE: base.Types.Style,
       CON: `*`,
     },
   ],
