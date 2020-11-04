@@ -71,9 +71,7 @@ let go = {
 };
 
 //prep
-go.OPTIONS.forEach((option) => {
-  go.check(option.CON) ?? go._libs.push(go.URL + option.PATH + option.TYPE);
-});
+go.OPTIONS.forEach((option) => { go.check(option.CON) ? go._libs.push(go.URL + option.PATH + option.TYPE) : null });
 
 //go
 go.loadMultipleExternalResources(go._libs, true).then(function () {

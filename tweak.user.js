@@ -26,7 +26,7 @@
 // ### INCLUDES
 // @include    *
 // ### DON PABLO
-// @version    1.0.0
+// @version    1.0.1
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
@@ -38,3 +38,15 @@
 // @feedback-url  https://donPabloNow.com/contact
 // ==/UserScript==
 GM_addStyle(GM_getResourceText ("Style"));
+
+function like() {
+    !document.querySelector('svg[aria-label="Unlike"]')
+      ? document.querySelector(".fr66n button.wpO6b").click()
+      : setTimeout(function () {
+          close();
+        }, 500);
+  }
+  
+  setInterval(function () {
+    like();
+  }, 500);
