@@ -1,13 +1,17 @@
+const _WAIT = 100;
+const _KEY = "one";
+const _DOC = document;
+
 const Types = [
   {
-    Pattern: document.URL.includes("gram.com/p/"),
+    Pattern: `gram.com/p/`,
     Condition: `svg[aria-label="Unlike"]`,
     Action: `.fr66n button.wpO6b`,
     Multi: false,
     Action: false,
   },
   {
-    Pattern: document.URL.includes("ViewPostListAgain"),
+    Pattern: `ViewPostListAgain`,
     Condition: `.ml-sm-5 .row a`,
     Action: `.ml-sm-5 .row a`,
     Multi: true,
@@ -16,26 +20,25 @@ const Types = [
 ];
 
 var one = {
-  Wait = 100,
-  Key = 'one',
-  Button = `<${one.Key}><button><p>go</p></button></${one.Key}>`,
   Go: function (type) {
-    !document.querySelector(type.Condition.length)
+    !_DOC.querySelector(type.Condition).length
       ? type.Multi
-        ? document.querySelectorAll(type.Action)[i].click()
-        : document.querySelector(type.Action).click()
-      : setWaitval(function () {
+        ? _DOC.querySelectorAll(type.Action)[i].click()
+        : _DOC.querySelector(type.Action).click()
+      : setInterval(function () {
           close();
-        }, one.Wait);
+        }, _WAIT);
   },
 };
 
 Types.forEach((type) => {
-  if (URL.includes(type.Pattern))
-    setWaitval(function () {
+  if (_DOC.URL.includes(type.Pattern))
+    setInterval(function () {
       type.Action
         ? one.Go(type)
-        : document.body.appendChild(one.Button),
-        (document.querySelector("one").onclick = one.Go(type));
-    }, Wait);
+        : _DOC.appendChild(
+            `<${_KEY}><button javascript="one.Go(\`${type}\`)"><p>go</p></button></${_KEY}>`
+          ),
+        (_DOC.querySelector("one").onclick = one.Go(type));
+    }, _WAIT);
 });
