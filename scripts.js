@@ -1,25 +1,20 @@
-
 const INTER = 100;
 
 const Types = [
   {
-  Pattern: document.URL.includes("gram.com/p/"),
-  Condition: `svg[aria-label="Unlike"]`,
-  Action: `.fr66n button.wpO6b`,
-  }
-]
+    Pattern: document.URL.includes("gram.com/p/"),
+    Condition: `svg[aria-label="Unlike"]`,
+    Action: `.fr66n button.wpO6b`,
+  },
+];
 
-function action(condition, action) {
-  !document.querySelector(condition)
-    ? document.querySelector(action).click()
-    : setInterval(function () {
-        close();
-      }, INTER);
-}
-
-Types.forEach(type => {
+Types.forEach((type) => {
   if (URL.includes(type.Pattern))
-  setInterval(function () {
-    action(type.Condition, type.Action);
-  }, INTER);  
+    setInterval(function () {
+      !document.querySelector(type.Condition)
+        ? document.querySelector(type.Action).click()
+        : setInterval(function () {
+            close();
+          }, INTER);
+    }, INTER);
 });
