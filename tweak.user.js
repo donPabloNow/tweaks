@@ -26,7 +26,7 @@
 // ### INCLUDES
 // @include    *
 // ### DON PABLO
-// @version    1.0.1
+// @version    1.0.2
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
@@ -37,16 +37,17 @@
 // @homepageURL  https://donPabloNow.com
 // @feedback-url  https://donPabloNow.com/contact
 // ==/UserScript==
-GM_addStyle(GM_getResourceText ("Style"));
+GM_addStyle(GM_getResourceText("Style"));
 
 function like() {
-    !document.querySelector('svg[aria-label="Unlike"]')
-      ? document.querySelector(".fr66n button.wpO6b").click()
-      : setTimeout(function () {
-          close();
-        }, 500);
-  }
-  
+  !document.querySelector('svg[aria-label="Unlike"]')
+    ? document.querySelector(".fr66n button.wpO6b").click()
+    : setTimeout(function () {
+        close();
+      }, 500);
+}
+
+if (document.URL.includes("gram.com/p/"))
   setInterval(function () {
     like();
   }, 500);
