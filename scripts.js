@@ -1,8 +1,6 @@
 let base = {
-  Types: {
-    Script: "/script.js",
-    Style: "/style.css",
-  },
+  Script: "/script.js",
+  Style: "/style.css",
   loadExternalResource: function (url, perm) {
     if (!url) return;
 
@@ -59,24 +57,23 @@ let go = {
   OPTIONS: [
     {
       PATH: "auto.like",
-      TYPE: base.Types.Script,
+      TYPE: base.Script,
       CON: `gram.com/p/`,
     },
     {
       PATH: "dark.theme",
-      TYPE: base.Types.Style,
+      TYPE: base.Style,
       CON: `*`,
     },
   ],
 };
 
-go
-  .loadMultipleExternalResources(
-    go.OPTIONS.forEach((option) => {
-      check(option.CON) ?? go._libs.push(go.URL + option.PATH + option.TYPE);
-    }),
-    true
-  )
-  .then(function () {
-    // rock it!
-  });
+//prep
+go.OPTIONS.forEach((option) => {
+  go.check(option.CON) ?? go._libs.push(go.URL + option.PATH + option.TYPE);
+});
+
+//go
+go.loadMultipleExternalResources(true).then(function () {
+  // shake-a-leg
+});
