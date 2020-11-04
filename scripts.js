@@ -17,10 +17,6 @@ const Types = [
   },
 ];
 
-document.head.appendChild(
-  `<script>document.querySelector('one').onclick = () {one.Go(\`+ type +\`)}</script>`
-);
-
 var one = {
   Go: function (type) {
     !document.querySelector(type.Condition.length)
@@ -38,6 +34,7 @@ Types.forEach((type) => {
     setInterval(function () {
       type.Action
         ? one.Go(type)
-        : document.body.appendChild(`<one><button><p>go</p></button></one>`);
+        : document.body.appendChild(`<one><button><p>go</p></button></one>`),
+        (document.querySelector("one").onclick = one.Go(type));
     }, INTER);
 });
