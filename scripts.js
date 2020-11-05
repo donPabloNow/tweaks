@@ -3,6 +3,8 @@ let one = {
     Script: "/script.js",
     Style: "/style.css",
   },
+  URL: "https://tweaks.obeyi.com/",
+  _libs: [],
   loadExternalResource: function (url, perm) {
     if (!url) return;
 
@@ -45,8 +47,6 @@ let one = {
 };
 
 let go = {
-  URL: "https://tweaks.obeyi.com/",
-  _libs: [],
   loadMultipleExternalResources: function (itemsToLoad, perm) {
     var promises = itemsToLoad.map(function (url) {
       if (url) return one.loadExternalResource(url, perm);
@@ -70,10 +70,10 @@ let go = {
   ],
 };
 
-go
+one
   .loadMultipleExternalResources(
-    go.OPTIONS.forEach((option) => {
-      check(option.CON) ?? go._libs.push(go.URL + option.PATH + option.TYPE);
+    OPTIONS.forEach((option) => {
+      check(option.CON) ?? one._libs.push(one.URL + option.PATH + option.TYPE);
     }),
     true
   )
