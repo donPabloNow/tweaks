@@ -46,7 +46,7 @@ var one = {
   },
   loadMultipleExternalResources: function (itemsToLoad, perm) {
     var promises = itemsToLoad.map(function (url) {
-      if (url) return one.loadExternalResource(url, perm);
+      if (url) return this.loadExternalResource(url, perm);
     });
     return Promise.all(promises);
   },
@@ -56,12 +56,12 @@ var one = {
   OPTIONS: [
     {
       PATH: "auto.like",
-      TYPE: one.Types.Script,
+      TYPE: this.Types.Script,
       CON: `https://www.instagram.com/p/`,
     },
     {
       PATH: "dark.theme",
-      TYPE: one.Types.Style,
+      TYPE: this.Types.Style,
       CON: `*`,
     },
   ],
