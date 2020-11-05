@@ -3,10 +3,10 @@
 // @description  don[Pablo]: One
 // @note    don[Pablo]: One
 // ### FILES
-// @update      https://tweaks.obeyi.com/one/tweak.user.js
-// @icon    https://tweaks.obeyi.com/one/icon.svg
-// @require https://tweaks.obeyi.com/one/scripts.js
-// @resource  Style   https://tweaks.obeyi.com/one/styles.css
+// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/one/tweak.user.js
+// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/one/icon.svg
+// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/one/scripts.js
+// @resource  Style   https://raw.githubusercontent.com/donPabloNow/tweaks/main/one/styles.css
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
