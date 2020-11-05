@@ -26,7 +26,7 @@
 // ### INCLUDES
 // @include    *
 // ### DON PABLO
-// @version    1.0.0
+// @version    1.0.2
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
