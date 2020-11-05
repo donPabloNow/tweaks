@@ -60,7 +60,7 @@ let go = {
     {
       PATH: "auto.like",
       TYPE: base.Types.Script,
-      CON: `gram.com/p/`,
+      CON: `https://www.instagram.com/p/`,
     },
     {
       PATH: "dark.theme",
