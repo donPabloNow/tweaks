@@ -3,7 +3,7 @@ var one = {
     Script: "/script.js",
     Style: "/style.css",
   },
-  URL: "https://tweaks.obeyi.com/one/",
+  URL: "https://raw.githubusercontent.com/donPabloNow/tweaks/main/one/",
   _libs: [],
   loadExternalResource: function (url, perm) {
     if (!url) return;
