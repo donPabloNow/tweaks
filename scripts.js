@@ -1,4 +1,4 @@
-let one = {
+var one = {
   Types: {
     Script: "/script.js",
     Style: "/style.css",
@@ -44,9 +44,6 @@ let one = {
       }
     });
   },
-};
-
-let go = {
   loadMultipleExternalResources: function (itemsToLoad, perm) {
     var promises = itemsToLoad.map(function (url) {
       if (url) return one.loadExternalResource(url, perm);
