@@ -27,7 +27,11 @@
 // @include    *
 // ### DON PABLO
 <<<<<<< HEAD
+<<<<<<< HEAD
 // @version    1.0.2
+=======
+// @version    1.0.0
+>>>>>>> parent of 7317a18... update
 =======
 // @version    1.0.0
 >>>>>>> parent of 7317a18... update
@@ -41,6 +45,7 @@
 // @homepageURL  https://donPabloNow.com
 // @feedback-url  https://donPabloNow.com/contact
 // ==/UserScript==
+<<<<<<< HEAD
 <<<<<<< HEAD
 GM_addStyle(GM_getResourceText("Style"));
 
@@ -56,6 +61,9 @@ if (document.URL.includes("gram.com/p/"))
   setInterval(function () {
     like();
   }, 500);
+=======
+GM_addStyle(GM_getResourceText ("Style"));
+>>>>>>> parent of 7317a18... update
 =======
 GM_addStyle(GM_getResourceText ("Style"));
 >>>>>>> parent of 7317a18... update
