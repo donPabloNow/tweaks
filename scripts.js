@@ -1,3 +1,5 @@
+const INTER = 100;
+
 const Types = [
   {
     Pattern: document.URL.includes("gram.com/p/"),
@@ -16,26 +18,23 @@ const Types = [
 ];
 
 var one = {
-  Wait = 100,
-  Key = 'one',
-  Button = `<${one.Key}><button><p>go</p></button></${one.Key}>`,
   Go: function (type) {
     !document.querySelector(type.Condition.length)
       ? type.Multi
         ? document.querySelectorAll(type.Action)[i].click()
         : document.querySelector(type.Action).click()
-      : setWaitval(function () {
+      : setInterval(function () {
           close();
-        }, one.Wait);
+        }, INTER);
   },
 };
 
 Types.forEach((type) => {
   if (URL.includes(type.Pattern))
-    setWaitval(function () {
+    setInterval(function () {
       type.Action
         ? one.Go(type)
-        : document.body.appendChild(one.Button),
+        : document.body.appendChild(`<one><button><p>go</p></button></one>`),
         (document.querySelector("one").onclick = one.Go(type));
-    }, Wait);
+    }, INTER);
 });
