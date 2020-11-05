@@ -3,10 +3,10 @@
 // @description  don[Pablo]: Dark Mode
 // @note    don[Pablo]: Dark Mode
 // ### FILES
-// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/tweak.user.js
-// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/icon.svg
-// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/scripts.js
-// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/dark.mode/styles.css
+// @update      https://tweaks.obeyi.com/dark.mode/tweak.user.js
+// @icon    https://tweaks.obeyi.com/dark.mode/icon.svg
+// @require https://tweaks.obeyi.com/dark.mode/scripts.js
+// @resource  CommonStyle   https://tweaks.obeyi.com/dark.mode/styles.css
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue

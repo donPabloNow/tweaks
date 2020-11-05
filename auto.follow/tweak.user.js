@@ -3,10 +3,10 @@
 // @description  don[Pablo]: Auto follow Instagram Posts
 // @note    don[Pablo]: Auto follow Instagram Posts
 // ### FILES
-// @update      https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.follow/tweak.user.js
-// @icon    https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.follow/icon.svg
-// @require https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.follow/scripts.js
-// @resource  CommonStyle   https://raw.githubusercontent.com/donPabloNow/tweaks/main/auto.follow/styles.css
+// @update      https://tweaks.obeyi.com/auto.follow/tweak.user.js
+// @icon    https://tweaks.obeyi.com/auto.follow/icon.svg
+// @require https://tweaks.obeyi.com/auto.follow/scripts.js
+// @resource  CommonStyle   https://tweaks.obeyi.com/auto.follow/styles.css
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
