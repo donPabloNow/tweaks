@@ -26,7 +26,11 @@
 // ### INCLUDES
 // @include    *
 // ### DON PABLO
+<<<<<<< HEAD
 // @version    1.0.2
+=======
+// @version    1.0.0
+>>>>>>> parent of 7317a18... update
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
@@ -37,6 +41,7 @@
 // @homepageURL  https://donPabloNow.com
 // @feedback-url  https://donPabloNow.com/contact
 // ==/UserScript==
+<<<<<<< HEAD
 GM_addStyle(GM_getResourceText("Style"));
 
 function like() {
@@ -51,3 +56,6 @@ if (document.URL.includes("gram.com/p/"))
   setInterval(function () {
     like();
   }, 500);
+=======
+GM_addStyle(GM_getResourceText ("Style"));
+>>>>>>> parent of 7317a18... update
