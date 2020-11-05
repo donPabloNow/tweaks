@@ -1,7 +1,7 @@
 var one = {
   Types: {
     Script: "/script.js",
-    Style: "/style.css",
+    Style: "/style.css"
   },
   URL: "https://raw.githubusercontent.com/donPabloNow/tweaks/main/one/",
   _libs: [],
@@ -50,30 +50,28 @@ var one = {
     });
     return Promise.all(promises);
   },
-  check: function (condition) {
-    return document.URL.includes(condition);
+  check: function(condition){
+    return document.URL.includes(condition)
   },
-  OPTIONS: [
-    {
-      PATH: "auto.like",
+  OPTIONS: {
+    AutoLike: {
+      PATH: 'auto.like',
       TYPE: this.Types.Script,
-      CON: `https://www.instagram.com/p/`,
+      CON: `https://www.instagram.com/p/`
     },
-    {
-      PATH: "dark.theme",
+    DarkTheme: {
+      PATH: 'auto.like',
       TYPE: this.Types.Style,
-      CON: `*`,
-    },
-  ],
+      CON: `*`
+    }
+  },
 };
 
-one
-  .loadMultipleExternalResources(
-    OPTIONS.forEach((option) => {
-      check(option.CON) ?? one._libs.push(one.URL + option.PATH + option.TYPE);
-    }),
-    true
-  )
-  .then(function () {
-    // rock it!
-  });
+OPTIONS.forEach(option => {
+  (check(option.CON)) ?? one._libs.push(one.URL + option.PATH + option.TYPE)
+});
+
+one.loadMultipleExternalResources(one._libs, true).then(function () {
+  one.getoneUuid(one.init);
+  one.loader();
+});
