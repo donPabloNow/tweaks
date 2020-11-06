@@ -1,14 +1,13 @@
-var check = (page) => document.URL.includes(page);
+const WAIT = 500;
 
-check("gram.com/p/")
-  ? (function () {
-      "use strict";
-      setInterval(function () {
-        !document.querySelector('svg[aria-label="Unlike"]')
-          ? document.querySelector(".fr66n button.wpO6b").click()
-          : setTimeout(function () {
-              close();
-            }, 5000);
-      }, 500);
-    })()
-  : null
+function CHECK(page) {
+  return document.URL.includes(page);
+}
+
+if (CHECK("gram.com/p/")) {
+  setInterval(function () {
+    !document.querySelector('svg[aria-label="Unlike"]')
+      ? document.querySelector(".fr66n button.wpO6b").click()
+      : close();
+  }, WAIT);
+}
