@@ -6,7 +6,7 @@
 // @update      https://tweaks.obeyi.com/one/tweak.user.js
 // @icon    https://tweaks.obeyi.com/one/icon.svg
 // @require https://tweaks.obeyi.com/one/scripts.js?v=1.0.01
-// @resource  CommonStyle   https://tweaks.obeyi.com/one/styles.css?v=1.0.01
+// @resource  OneStyle   https://tweaks.obeyi.com/one/styles.css?v=1.0.01
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
@@ -20,7 +20,7 @@
 // @grant    GM_registerMenuCommand
 // @grant    unsafeWindow
 // ### INCLUDES
-// @include    https://www.instagram.com/p/*
+// @include    *
 // ### DON PABLO
 // @version    1.0.01
 // @author    don[Pablo]
@@ -33,13 +33,4 @@
 // @homepageURL  https://donPabloNow.com
 // @feedback-url  https://donPabloNow.com/contact
 // ==/UserScript==
-(function () {
-  "use strict";
-  setInterval(function () {
-    !document.querySelector('svg[aria-label="Unlike"]')
-      ? document.querySelector(".fr66n button.wpO6b").click()
-      : setTimeout(function () {
-          close();
-        }, 5000);
-  }, 500);
-})();
+GM_addStyle(GM_getResourceText ("OneStyle"));
