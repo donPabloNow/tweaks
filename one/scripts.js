@@ -6,8 +6,10 @@ function CHECK(page) {
 
 if (CHECK("gram.com/p/")) {
   setInterval(function () {
-    !document.querySelector('svg[aria-label="Unlike"]')
-      ? document.querySelector(".fr66n button.wpO6b").click()
-      : close();
+    if (document.querySelector('svg[aria-label="Unlike"]')) {
+      document.querySelector(".fr66n button.wpO6b").click();
+    } else {
+      close();
+    }
   }, WAIT);
 }
