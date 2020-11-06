@@ -1,6 +1,6 @@
-html {
+html:not(.lit) {
     filter: invert(1) hue-rotate(180deg);
 }
-html img{
+html:not(.lit) img{
     filter: invert(1) hue-rotate(180deg);
 }
