@@ -4,15 +4,12 @@ function CHECK(page) {
   return document.URL.includes(page);
 }
 
-(function () {
-  "use strict";
-  if (CHECK("gram.com/p/")) {
-    setInterval(function () {
-      if (document.querySelector('svg[aria-label="Unlike"]')) {
-        document.querySelector(".fr66n button.wpO6b").click();
-      } else {
-        close();
-      }
-    }, WAIT);
-  }
-})();
+if (CHECK("gram.com/p/")) {
+  setInterval(function () {
+    if (document.querySelector('svg[aria-label="Unlike"]')) {
+      document.querySelector(".fr66n button.wpO6b").click();
+    } else {
+      close();
+    }
+  }, WAIT);
+}

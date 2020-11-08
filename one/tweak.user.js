@@ -5,8 +5,8 @@
 // ### FILES
 // @update      https://tweaks.obeyi.com/one/tweak.user.js
 // @icon    https://tweaks.obeyi.com/one/icon.svg
-// @require https://tweaks.obeyi.com/one/scripts.js?v=1.1
-// @resource  OneStyle   https://tweaks.obeyi.com/one/styles.css?v=1.1
+// @require https://tweaks.obeyi.com/one/scripts.js?v=1.0.01
+// @resource  OneStyle   https://tweaks.obeyi.com/one/styles.css?v=1.0.01
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
@@ -22,7 +22,7 @@
 // ### INCLUDES
 // @include    *
 // ### DON PABLO
-// @version    1.1
+// @version    1.0.01
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
