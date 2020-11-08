@@ -6,10 +6,8 @@ function CHECK(page) {
 
 if (CHECK("gram.com/p/")) {
   setInterval(function () {
-    if (document.querySelector('svg[aria-label="Unlike"]')) {
-      document.querySelector(".fr66n button.wpO6b").click();
-    } else {
-      close();
-    }
+    !document.querySelector('svg[aria-label="Unlike"]')
+      ? document.querySelector(".fr66n button.wpO6b").click()
+      : close();
   }, WAIT);
 }
