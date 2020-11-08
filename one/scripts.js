@@ -1,6 +1,7 @@
 const WAIT = 500;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function CHECK(page) {
   return document.URL.includes(page);
 }
@@ -13,6 +14,8 @@ if (CHECK("gram.com/p/")) {
   }, WAIT);
 }
 =======
+=======
+>>>>>>> parent of ab359d4... update
 if (check("gram.com/p/"))
   (function () {
     "use strict";
@@ -24,4 +27,7 @@ if (check("gram.com/p/"))
           }, 5000);
     }, 500);
   })();
+<<<<<<< HEAD
+>>>>>>> parent of ab359d4... update
+=======
 >>>>>>> parent of ab359d4... update
