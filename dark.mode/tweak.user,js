@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name    don[Pablo]: One
-// @description  don[Pablo]: One
-// @note    don[Pablo]: One
+// @name    don[Pablo]: Dark Mode
+// @description  don[Pablo]: Dark Mode
+// @note    don[Pablo]: Dark Mode
 // ### FILES
-// @update      https://tweaks.obeyi.com/one/tweak.user.js
-// @icon    https://tweaks.obeyi.com/one/icon.svg
-// @require https://tweaks.obeyi.com/one/scripts.js?v=1.0.01
-// @resource  CommonStyle   https://tweaks.obeyi.com/one/styles.css?v=1.0.01
+// @update      https://tweaks.obeyi.com/dark.mode/tweak.user.js
+// @icon    https://tweaks.obeyi.com/dark.mode/icon.svg
+// @require https://tweaks.obeyi.com/dark.mode/scripts.js
+// @resource  CommonStyle   https://tweaks.obeyi.com/dark.mode/styles.css
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
@@ -20,9 +20,9 @@
 // @grant    GM_registerMenuCommand
 // @grant    unsafeWindow
 // ### INCLUDES
-// @include    https://www.instagram.com/p/*
+// @include       *
 // ### DON PABLO
-// @version    1.0.01
+// @version    1.0.0
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
@@ -33,13 +33,4 @@
 // @homepageURL  https://donPabloNow.com
 // @feedback-url  https://donPabloNow.com/contact
 // ==/UserScript==
-(function () {
-  "use strict";
-  setInterval(function () {
-    !document.querySelector('svg[aria-label="Unlike"]')
-      ? document.querySelector(".fr66n button.wpO6b").click()
-      : setTimeout(function () {
-          close();
-        }, 5000);
-  }, 500);
-})();
+GM_addStyle(GM_getResourceText ("CommonStyle"));

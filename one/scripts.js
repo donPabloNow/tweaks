@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const WAIT = 500;
 
 <<<<<<< HEAD
@@ -31,3 +32,5 @@ if (check("gram.com/p/"))
 >>>>>>> parent of ab359d4... update
 =======
 >>>>>>> parent of ab359d4... update
+=======
+>>>>>>> parent of 8130f4e... update

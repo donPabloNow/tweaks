@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name    don[Pablo]: One
-// @description  don[Pablo]: One
-// @note    don[Pablo]: One
+// @name    don[Pablo]: Auto like Instagram Posts
+// @description  don[Pablo]: Auto like Instagram Posts
+// @note    don[Pablo]: Auto like Instagram Posts
 // ### FILES
-// @update      https://tweaks.obeyi.com/one/tweak.user.js
-// @icon    https://tweaks.obeyi.com/one/icon.svg
-// @require https://tweaks.obeyi.com/one/scripts.js?v=1.0.01
-// @resource  CommonStyle   https://tweaks.obeyi.com/one/styles.css?v=1.0.01
+// @update      https://tweaks.obeyi.com/auto.like/tweak.user.js
+// @icon    https://tweaks.obeyi.com/auto.like/icon.svg
+// @require https://tweaks.obeyi.com/auto.like/scripts.js
+// @resource  CommonStyle   https://tweaks.obeyi.com/auto.like/styles.css
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
@@ -22,7 +22,7 @@
 // ### INCLUDES
 // @include    https://www.instagram.com/p/*
 // ### DON PABLO
-// @version    1.0.01
+// @version    1.0.0
 // @author    don[Pablo]
 // @create     2018-11-25
 // @license    MIT-3.0-only
