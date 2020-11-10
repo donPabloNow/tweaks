@@ -38,8 +38,6 @@
   setInterval(function () {
     !document.querySelector('svg[aria-label="Unlike"]')
       ? document.querySelector(".fr66n button.wpO6b").click()
-      : setTimeout(function () {
-          close();
-        }, 5000);
-  }, 500);
+      : close()
+  }, 100);
 })();
