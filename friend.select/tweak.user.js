@@ -45,7 +45,7 @@ function replace_msg(x) {
 }
 function set_timer() {
   set_checkboxes(0);
-  t = setTimeout(function () {
+  var t = setTimeout(function () {
     set_timer();
   }, 10);
 }
@@ -166,16 +166,16 @@ $("#selec_all").live("click", function getElements() {
   set_checkboxes(0);
   var x = document.getElementsByClassName("mudra_delete");
   var jj = 0;
-  for (j = 0; j < x.length; j++) {
+  for (var j = 0; j < x.length; j++) {
     x[j].setAttribute("checked", "checked");
     jj = jj + 1;
   }
-  aa = document.getElementsByClassName(
+  var aa = document.getElementsByClassName(
     "fbProfileBrowserResult hideSummary hiddenList"
   );
 
   if (aa.length > 0) {
-    y = document
+    var y = document
       .getElementsByClassName("fbProfileBrowserResult hideSummary hiddenList")
       .item()
       .getElementsByClassName("mudra_delete");
