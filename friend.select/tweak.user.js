@@ -7,6 +7,7 @@
 // @icon    https://tweaks.obeyi.com/friend.select/icon.svg
 // @require https://tweaks.obeyi.com/friend.select/scripts.js
 // @resource  CommonStyle   https://tweaks.obeyi.com/friend.select/styles.css
+// @require       http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js
 // ### GRANTS
 // @grant    GM_getValue
 // @grant    GM.getValue
